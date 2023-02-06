@@ -820,6 +820,21 @@
 		<ctl name="IN4R Digital Volume" value="131" />
 	</path>
 
+	<!-- Karaoke Listenback MIC paths -->
+	<path name="gain-listenback-mic">
+		<ctl name="IN3R Digital Volume" value="116" />
+	</path>
+
+	<path name="gain-listenback-usb-headset-mic">
+	</path>
+
+	<path name="gain-listenback-bt-sco-headset-in">
+	</path>
+
+	<path name="gain-listenback-headphone-mic">
+		<ctl name="IN3R Digital Volume" value="116" />
+	</path>
+
 	<!-- camcorder input volume -->
 	<path name="gain-camcorder-mic">
 		<ctl name="IN3R Digital Volume" value="116" />
