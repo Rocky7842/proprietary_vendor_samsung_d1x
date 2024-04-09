@@ -11,6 +11,7 @@ PRODUCT_COPY_FILES += \
     vendor/samsung/d1x/proprietary/vendor/etc/gnss/gps.xml:$(TARGET_COPY_OUT_VENDOR)/etc/gnss/gps.xml \
     vendor/samsung/d1x/proprietary/vendor/etc/init/init.baseband.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/init.baseband.rc \
     vendor/samsung/d1x/proprietary/vendor/etc/init/init.gps.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/init.gps.rc \
+    vendor/samsung/d1x/proprietary/vendor/etc/init/vaultkeeper_common.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/vaultkeeper_common.rc \
     vendor/samsung/d1x/proprietary/vendor/etc/init/vendor.samsung.hardware.gnss@2.1-service.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/vendor.samsung.hardware.gnss@2.1-service.rc \
     vendor/samsung/d1x/proprietary/vendor/etc/media_codecs_performance.xml:$(TARGET_COPY_OUT_VENDOR)/etc/media_codecs_performance.xml \
     vendor/samsung/d1x/proprietary/vendor/etc/plmn_se13.bin:$(TARGET_COPY_OUT_VENDOR)/etc/plmn_se13.bin \
@@ -82,6 +83,7 @@ PRODUCT_COPY_FILES += \
     vendor/samsung/d1x/proprietary/vendor/tee/00000000-0000-0000-0000-46494e474502:$(TARGET_COPY_OUT_VENDOR)/tee/00000000-0000-0000-0000-46494e474502 \
     vendor/samsung/d1x/proprietary/vendor/tee/00000000-0000-0000-0000-4b45594d5354:$(TARGET_COPY_OUT_VENDOR)/tee/00000000-0000-0000-0000-4b45594d5354 \
     vendor/samsung/d1x/proprietary/vendor/tee/00000000-0000-0000-0000-505256544545:$(TARGET_COPY_OUT_VENDOR)/tee/00000000-0000-0000-0000-505256544545 \
+    vendor/samsung/d1x/proprietary/vendor/tee/00000000-0000-0000-0000-564c544b5052:$(TARGET_COPY_OUT_VENDOR)/tee/00000000-0000-0000-0000-564c544b5052 \
     vendor/samsung/d1x/proprietary/vendor/tee/00000000-0000-0000-0000-657365447276:$(TARGET_COPY_OUT_VENDOR)/tee/00000000-0000-0000-0000-657365447276 \
     vendor/samsung/d1x/proprietary/vendor/tee/driver/00000000-0000-0000-0000-53626f786476:$(TARGET_COPY_OUT_VENDOR)/tee/driver/00000000-0000-0000-0000-53626f786476
 
@@ -97,8 +99,12 @@ PRODUCT_PACKAGES += \
     gps.default \
     vendor.samsung.hardware.gnss@2.1-impl \
     libexynoscamera3 \
+    libstork_shared \
+    libvkmanager_vendor \
+    libvkservice \
     libwrappergps \
     vendor.samsung.hardware.gnss@2.1 \
     gpsd \
     lhd \
-    vendor.samsung.hardware.gnss@2.1-service
+    vendor.samsung.hardware.gnss@2.1-service \
+    vaultkeeperd
