@@ -301,72 +301,38 @@ cc_prebuilt_library_shared {
 	soc_specific: true,
 }
 
-cc_prebuilt_binary {
+sh_binary {
 	name: "gpsd",
 	owner: "samsung",
-	target: {
-		android_arm64: {
-			srcs: ["proprietary/vendor/bin/hw/gpsd"],
-		},
-	},
-	compile_multilib: "64",
-	check_elf_files: false,
-	strip: {
-		none: true,
-	},
-	prefer: true,
-	relative_install_path: "hw",
-	soc_specific: true,
-}
-cc_prebuilt_binary {
-	name: "lhd",
-	owner: "samsung",
-	target: {
-		android_arm64: {
-			srcs: ["proprietary/vendor/bin/hw/lhd"],
-		},
-	},
-	compile_multilib: "64",
-	check_elf_files: false,
-	strip: {
-		none: true,
-	},
-	prefer: true,
-	relative_install_path: "hw",
-	soc_specific: true,
-}
-cc_prebuilt_binary {
-	name: "vendor.samsung.hardware.gnss@2.1-service",
-	owner: "samsung",
-	target: {
-		android_arm64: {
-			srcs: ["proprietary/vendor/bin/hw/vendor.samsung.hardware.gnss@2.1-service"],
-		},
-	},
-	compile_multilib: "64",
-	check_elf_files: false,
-	strip: {
-		none: true,
-	},
-	prefer: true,
-	relative_install_path: "hw",
+	src: "proprietary/vendor/bin/hw/gpsd",
+	filename: "gpsd",
+	sub_dir: "hw",
 	soc_specific: true,
 }
 
-cc_prebuilt_binary {
+sh_binary {
+	name: "lhd",
+	owner: "samsung",
+	src: "proprietary/vendor/bin/hw/lhd",
+	filename: "lhd",
+	sub_dir: "hw",
+	soc_specific: true,
+}
+
+sh_binary {
+	name: "vendor.samsung.hardware.gnss@2.1-service",
+	owner: "samsung",
+	src: "proprietary/vendor/bin/hw/vendor.samsung.hardware.gnss@2.1-service",
+	filename: "vendor.samsung.hardware.gnss@2.1-service",
+	sub_dir: "hw",
+	soc_specific: true,
+}
+
+sh_binary {
 	name: "vaultkeeperd",
 	owner: "samsung",
-	target: {
-		android_arm64: {
-			srcs: ["proprietary/vendor/bin/vaultkeeperd"],
-		},
-	},
-	compile_multilib: "64",
-	check_elf_files: false,
-	strip: {
-		none: true,
-	},
-	prefer: true,
+	src: "proprietary/vendor/bin/vaultkeeperd",
+	filename: "vaultkeeperd",
 	soc_specific: true,
 }
 
